@@ -1,4 +1,5 @@
 英文对照表
+人 person
 老师 teacher
 学生 student
 班级 class
