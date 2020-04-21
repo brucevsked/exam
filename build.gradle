@@ -9,6 +9,7 @@ version "1.0"
 project.ext{
     slfejVersion="1.+"
     log4j2Version="2.+"
+    commonsLang3Version="3.+"
     mockitoVersion="3.+"
     hamcrestVersion="2.+"
     jbehaveVersion="4.+"
@@ -24,6 +25,7 @@ repositories {
 
 dependencies {
     implementation "org.slf4j:slf4j-api:$rootProject.slfejVersion"
+    implementation "org.apache.commons:commons-lang3:$rootProject.commonsLang3Version"
     implementation "org.apache.logging.log4j:log4j-core:$rootProject.log4j2Version"
     implementation "org.apache.logging.log4j:log4j-slf4j-impl:$rootProject.log4j2Version"
     implementation "org.apache.logging.log4j:log4j-api:$rootProject.log4j2Version"
