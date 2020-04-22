@@ -7,8 +7,8 @@ group "com.vsked"
 version "1.0"
 
 project.ext{
-    slfejVersion="1.+"
-    log4j2Version="2.+"
+    slf4jVersion="1.7.30"
+    log4j2Version="2.13.1"
     commonsLang3Version="3.+"
     mockitoVersion="3.+"
     hamcrestVersion="2.+"
@@ -24,7 +24,7 @@ repositories {
 
 
 dependencies {
-    implementation "org.slf4j:slf4j-api:$rootProject.slfejVersion"
+    implementation "org.slf4j:slf4j-api:$rootProject.slf4jVersion"
     implementation "org.apache.commons:commons-lang3:$rootProject.commonsLang3Version"
     implementation "org.apache.logging.log4j:log4j-core:$rootProject.log4j2Version"
     implementation "org.apache.logging.log4j:log4j-slf4j-impl:$rootProject.log4j2Version"
