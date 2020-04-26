@@ -1,12 +1,15 @@
 
 plugins {
     id "java"
+    id "org.springframework.boot" version "2.2.6.RELEASE"
 }
 
 group "com.vsked"
 version "1.0"
 
 project.ext{
+    springBootVersion="2.2.6.RELEASE"
+    mysqlVersion="8.+"
     slf4jVersion="1.7.30"
     log4j2Version="2.13.1"
     commonsLang3Version="3.+"
@@ -22,8 +25,19 @@ repositories {
     jcenter()
 }
 
+configurations {
+    //remove default logger
+    all*.exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+}
 
 dependencies {
+    runtimeOnly  "org.springframework.boot:spring-boot-devtools:$rootProject.springBootVersion"
+    implementation "org.springframework.boot:spring-boot-starter-test:$rootProject.springBootVersion"
+    implementation "org.springframework.boot:spring-boot-starter-web:$rootProject.springBootVersion"
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa:$rootProject.springBootVersion"
+
+    implementation "mysql:mysql-connector-java:$rootProject.mysqlVersion"
+
     implementation "org.slf4j:slf4j-api:$rootProject.slf4jVersion"
     implementation "org.apache.commons:commons-lang3:$rootProject.commonsLang3Version"
     implementation "org.apache.logging.log4j:log4j-core:$rootProject.log4j2Version"

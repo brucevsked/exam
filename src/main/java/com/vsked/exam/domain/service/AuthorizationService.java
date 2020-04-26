@@ -1,4 +1,4 @@
 package com.vsked.exam.domain.service;
 
-public class LoginService {
+public class AuthorizationService {
 }

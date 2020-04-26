@@ -1,11 +1,29 @@
 最近又想了一下，面向学校的考试系统不太好推销，那就写个企业考试系统吧
 
-公司(有上级概念)
-部门(有上级概念)
-专业(有上级概念)
-课程
-班级
-员工
+
+英文对照表
+人 person
+出卷人
+填卷人
+审卷人
+
+
+账户 account
+授权 authorization
+
+公司(有上级概念) company
+部门(有上级概念) depart
+专业(有上级概念) major
+课程 course
+班级 classes
+员工 employee
+考卷 examPaper
+考题类型 examQuestionType
+考题 examQuestion
+考题选项 examQuestionItem
+考题标准答案 examStandardAnswer
+学生填写答案 studentInputAnswer
+成绩 score
 
 
 先来想系统中的所有动作
@@ -63,19 +81,7 @@
 
 
 
-英文对照表
-人 person
-出卷人
-填卷人
-审卷人
 
-科目 course
-考题类型 examQuestionType
-考题 examQuestion
-考题选项 examQuestionItem
-考题标准答案 examStandardAnswer
-学生填写答案 studentInputAnswer
-考卷 examPaper
 --------------------------------------------------------------------------------
 基本概念
 教师(在职,离职,请假)
